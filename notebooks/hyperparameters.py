@@ -5,17 +5,17 @@ import numpy as np
 inversion_threshold = 80
 
 # Thresholding
-adaptive_threshold_block_size = 301
+adaptive_threshold_block_size = 31
 adaptive_threshold_c = 10
 
 # Median Blur
 median_blur_widow_size = 7
 
 # Hough
-hough_min_line_length_ratio = 3
+hough_min_line_length_ratio = 2.9
 hough_rho = 1
 hough_theta = np.pi/360
-hough_threshold = 300
+hough_threshold = 307
 hough_max_line_gap = 55
 
 # Point on line

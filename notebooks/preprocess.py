@@ -183,6 +183,8 @@ for file in files:
             M=cv2.getPerspectiveTransform(dst_coords, src_coords),
             dsize=binary_img.shape[::-1]
         )
+        
+        cv2.imwrite(f"./phase-1-results/{file}", img_gray_threshed_warped)
 
         M = img_gray_threshed_warped.shape[0] // 9
         N = img_gray_threshed_warped.shape[1] // 9
